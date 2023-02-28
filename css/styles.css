@@ -722,11 +722,14 @@ body {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8E8F99;        
+    color: #8E8F99;           
 }
 .modal-field{
     margin-bottom: 8px;
 }
+/*.modal-field-text {
+    margin-bottom: 16px; 
+}*/
 .input-wrap{
     position: relative;
     margin-top: 4px;
@@ -793,6 +796,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 .check-text span{
     width: 16px;
