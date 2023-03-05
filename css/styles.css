@@ -114,20 +114,124 @@ body {
     margin-right: 16px;
     padding: 0;
     margin-top: 24px;
-    margin-bottom: 24px;
-    
-    transition-property: background, fill;
-    /*transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
-    position: absolute;
-    box-sizing: border-box;    
-    background: transparent;
-    border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);*/
+    margin-bottom: 24px;    
+    transition-property: background, fill;    
 }
 .menu-open-icon {    
-    fill: #2E2F42;     
+    stroke: #2E2F42;     
 }
+/*****mob-menu*****/
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 24px;
+}
+.mob-conteiner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 353px;
+    /*height: 104px;
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;*/  
+}
+.mob-menu > .container {
+    /*height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+.mob-menu-close {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #E7E9FC;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-bottom: 32px;        
+}
+/*.mob-menu-close-icon {
+}*/
+.mob-menu-list {
+    margin-bottom: 24px;
+}
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.mob-menu-link {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc ( 40 / 36 );
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+}
+.mob-menu-link:hover,
+.mob-menu-link:focus {    
+    color: #404BBF;                 
+} 
+.mob-menu-tel {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc ( 40 / 36 );
+    letter-spacing: 0.02em;
+    color: #4D5AE5;
+    margin-bottom: 40px;
+    display: block;
+}
+.mob-menu-mail {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc ( 24 / 20 );
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.mob-soc-list {
+    display: block;
+    display: flex;
+    justify-content: space-between;    
+    margin-top: 48px;
+}
+.mob-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.mob-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: #4D5AE5;    
+}
+.mob-soc-icon {
+    fill: #F4F4FD;
+}
+
 /*main*/
 .mainindex {
     padding-top: 112px;
@@ -186,10 +290,13 @@ body {
 /*******************Phone*******************/ 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 428px;
   }
   .header-list, {
     display: none;
+}
+.mob-menu-tel {    
+    font-size: 36px;    
 }
   /*main*/
   .effstext { 
@@ -207,7 +314,7 @@ body {
 /*******************Tablet*******************/ 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 720px;
   }  
     /*header*/
   .header-navigation {
