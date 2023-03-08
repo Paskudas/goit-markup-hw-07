@@ -304,7 +304,8 @@ body {
   .values-icon {
     display: none;
   }
-  .textstyle1 {       
+  .textstyle1 {
+    text-align: center;       
     font-weight: 700;
     font-size: 36px;
     line-height: calc ( 40 / 36 );
@@ -346,9 +347,9 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
 }
-.wwwawed {
+.wawd {
     display: none;
-  }
+  }  
 
   /*****ourteam*****/
 .ourteam {    
@@ -415,8 +416,7 @@ body {
 }
 .ourteam-soc-item {
   width: 40px;
-  height: 40px;
-  
+  height: 40px;  
   /*padding-top: 8px;*/
 }
 .ourteam-soc-link {
@@ -507,7 +507,7 @@ body {
     gap: 72px;
     position: relative;    
 }
-.footertext{    
+.footertext {    
     color: #E7E9FC;
     font-size: 16px;
     line-height: 1.5;
@@ -586,7 +586,7 @@ body {
 }
 .subscribe-input{
     display: flex;
-    width: 398px;
+    /*width: 398px;*/
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -598,7 +598,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     /* outline: transparent; */
     padding: 8px 16px;
-    margin-right: 24px;
+    /*margin-right: 24px;*/
 }
 .btn-subscribe{
     width: 165px;
@@ -659,11 +659,11 @@ body {
   .values {
     padding-top: 96px;
     padding-bottom: 96px;    
-}
-.values-item {
+  }
+  .values-item {
     max-width: 396px;
     height: 96px;
-}
+  }
   .features {
     display: flex;
     flex-direction: column;
@@ -678,9 +678,8 @@ body {
     font-size: 36px;
     line-height: calc ( 40 / 36 );
     letter-spacing: 0.02em;
-    color: #2e2f42; 
-    
-}
+    color: #2e2f42;
+  }
 .textstyle2 {
     font-weight: 500;
     font-size: 16px;
@@ -690,11 +689,15 @@ body {
 }
   .wawd {
     display: none;
+  }
+  .subscribe-input{    
+    width: 398px;
+    
   }  
 }
 
 /*******************Tablet*******************/ 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)/* and (max-width: 1199px)*/{
   .container {
     max-width: 720px;
   }  
@@ -807,7 +810,8 @@ body {
   .values-icon {
     display: none;
   }
-  .textstyle1 {       
+  .textstyle1 {   
+    text-align: left;    
     font-weight: 700;
     font-size: 36px;
     line-height: calc ( 40 / 36 );
@@ -943,6 +947,7 @@ body {
     height: 412px;
     left: 156px;
     top: 1016px;*/
+    display: block;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -953,6 +958,15 @@ body {
     width: 360px;
     height: 300px;
     border: 1px solid #E7E9FC;*/
+}
+/*****Ourteam*****/
+.texth3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color-subtitle, #2E2F42);
+    margin-bottom: 8px;
 }
 /*values*/
 .values {
@@ -983,7 +997,8 @@ body {
     top: 792px;
     background: #FFFFFF;*/
 }
-.textstyle1 {       
+.textstyle1 {
+    text-align: left;       
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -992,6 +1007,7 @@ body {
     margin-bottom: 8px;
 }
 .textstyle2 {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1095,8 +1111,8 @@ body {
 }
 .backgroundfooter {    
     background-color: #2E2F42;
-    padding-top: 120px;
-    padding-bottom: 120px;       
+    padding-top: 100px;
+    padding-bottom: 100px;       
     margin: 0 auto;    
 }
 .footerlist {
@@ -1110,7 +1126,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;    
+    width: 264px;    
     margin-top: 16px;
 }
 .logostudiofooter {
