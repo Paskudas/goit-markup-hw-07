@@ -1089,7 +1089,7 @@ body {
     display: flex;    
     flex-direction: row;
     gap: 72px;
-    align-items: ;
+    align-items: flex-start;
     text-align: ;
     align-content: ;         
 }
