@@ -502,12 +502,14 @@ body {
     margin: 0 auto;    
 }
 .footerlist {
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 72px;
     position: relative;    
 }
 .footertext {    
+    text-align: left;
     color: #E7E9FC;
     font-size: 16px;
     line-height: 1.5;
@@ -691,9 +693,8 @@ body {
     display: none;
   }
   .subscribe-input{    
-    width: 398px;
-    
-  }  
+    width: 398px;    
+  } 
 }
 
 /*******************Tablet*******************/ 
@@ -858,6 +859,7 @@ body {
 }
 /****Footer*****/
 .footerlist {
+    text-align: left;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -1116,6 +1118,7 @@ body {
     margin: 0 auto;    
 }
 .footerlist {
+    text-align: left;
     display: flex;
     flex-direction: row;
     gap: 120px;
