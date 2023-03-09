@@ -460,9 +460,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: flex-start;
     gap: 24px;
+    row-gap: 72px;
+    
     /*margin-bottom: 120px;*/
 }
 .item {
@@ -511,6 +513,14 @@ body {
     flex-direction: column;
     gap: 72px;
     position: relative;    
+}
+.footer-subscribe{
+   display: flex;
+   flex-direction: column;
+   align-items: center;     
+   /*margin-left: 80px;
+   Width: 453px;
+   Height: 80px;*/      
 }
 .footertext {    
     text-align: left;
@@ -567,15 +577,6 @@ body {
 .footertext-soc-link:is(:hover),
 .footertext-soc-link:is(:focus) {
   background-color: #31D0AA;  
-}
-.footer-subscribe{
-   display: flex;
-   flex-direction: column;
-   align-items: center;     
-   /*margin-left: 80px;
-   Width: 453px;
-   Height: 80px;*/
-      
 }
 .subscribe-title{
     font-size: 16px;
@@ -699,6 +700,13 @@ body {
   .subscribe-input{    
     width: 398px;    
   } 
+  /*****Costumers*****/
+.list2 {    
+    list-style: none;
+    display: flex;    
+    gap: 16px;
+    row-gap: 72px;
+}
 }
 
 /*******************Tablet*******************/ 
@@ -859,6 +867,7 @@ body {
     list-style: none;
     display: flex;    
     gap: 24px;
+    row-gap: 72px;
 }
 /****Footer*****/
 .footerlist {
@@ -1197,6 +1206,7 @@ body {
 }
 .subscribe-form{
     display: flex;
+    gap: 24px;
 }
 .subscribe-input{
     display: flex;
@@ -1212,7 +1222,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     /* outline: transparent; */
     padding: 8px 16px;
-    margin-right: 24px;
+    /*margin-right: 24px;*/
 }
 .btn-subscribe{
     min-width: 165px;
