@@ -259,6 +259,15 @@ body {
     background-size: cover;
     margin: 0 auto;  
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+       rgba(46, 47, 66, 0.7), 
+       rgba(46, 47, 66, 0.7)
+       ), url(../images/peopleofficetel2x.jpg);
+  }
 .effstext { 
     font-size: 24x;
     line-height: 1.07;
