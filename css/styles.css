@@ -319,6 +319,7 @@ body {
 /*values*/
 .values {
     padding-top: 96px;
+    padding-bottom: 96px;
     margin-left: 16px;
     margin-right: 16px;
 
@@ -352,6 +353,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding
 }
 /*.features {
     display: flex;
