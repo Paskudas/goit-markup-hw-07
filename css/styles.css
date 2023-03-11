@@ -162,18 +162,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 353px;
+    /*width: 353px;*/
     overflow: auto;        
 }
 .mob-menu-close {    
     display: block;
     width: 24px;
     height: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     background: #E7E9FC;
-    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;    
     margin-left: auto;
-    margin-bottom: 32px;        
+    margin-bottom: 32px;    
+    padding: 0;    
+            
 }
 .mob-menu-list {
     margin-bottom: 24px;
@@ -253,7 +255,9 @@ body {
     padding-top: 112px;
     padding-bottom: 112px;    
     background: #2E2F42;    
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofficetel.jpg);
+    background: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/peopleofficetel.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -268,6 +272,7 @@ body {
        rgba(46, 47, 66, 0.7)
        ), url(../images/peopleofficetel2x.jpg);
   }
+}
 .effstext { 
     font-size: 24x;
     line-height: 1.07;
@@ -794,12 +799,24 @@ body {
 }
 /*main*/
   .mainindex {    
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleofficepl.jpg);
+    background: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/peopleofficepl.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto; 
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+       rgba(46, 47, 66, 0.7), 
+       rgba(46, 47, 66, 0.7)
+       ), url(../images/peopleofficepl2x.jpg);
+  }
+}
   .effstext { 
     font-size: 56px;
     line-height: 1.07;
@@ -813,7 +830,7 @@ body {
   /*Values*/    
   .values {
     padding-top: 96px;
-    /*padding-bottom: 96px;*/
+    padding-bottom: 96px;
       
 }
 .values-item {
@@ -894,11 +911,11 @@ body {
 .subscribe-form{
     display: flex;
     flex-direction: row;
-    /*gap: 24px;*/    
+    gap: 24px;    
 }           
 .footer-subscribe{   
    align-items: flex-start;
-   
+   width: 496px;   
 } 
 .footertext-soc {
     text-align: left;
@@ -954,8 +971,20 @@ body {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+    background: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), 
+     url(../images/peopleoffice.jpg);
   }
+  p@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+       rgba(46, 47, 66, 0.7), 
+       rgba(46, 47, 66, 0.7)
+       ), url(../images/peopleoffice2x.jpg);
+  }
+}
   .effstext { 
     font-size: 56px;
     line-height: 1.07;
@@ -1014,7 +1043,8 @@ body {
 }
 /*values*/
 .values {
-    padding-top: 120px;    
+    padding-top: 120px;
+    padding-bottom: 120px;      
 }
 .values-item {
     max-width: 264px;
