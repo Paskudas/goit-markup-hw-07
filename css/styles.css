@@ -500,7 +500,7 @@ body {
 }
 .item {
     /*width: 188px;*/    
-    width: calc((100%-16px) / 2);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 .custumers-link {
@@ -904,7 +904,7 @@ body {
 }
 .item {
     /*width: 188px;*/    
-    width: calc((100%-48px) / 3);
+    width: calc((100% - 48px) / 3);
     height: 88px;
 }
 /****Footer*****/
