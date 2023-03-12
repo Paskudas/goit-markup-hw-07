@@ -913,8 +913,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    align-items: flex-start;   
-            
+    align-items: flex-start;            
 }
 .footerlist {
     text-align: left;
