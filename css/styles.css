@@ -320,8 +320,8 @@ body {
 .values {
     padding-top: 96px;
     padding-bottom: 96px;
-    margin-left: 16px;
-    margin-right: 16px;
+    /*margin-left: 16px;
+    margin-right: 16px;*/
 }
 .values-item {
     max-width: 396px;
@@ -743,7 +743,7 @@ body {
 /*******************Tablet*******************/ 
 @media screen and (min-width: 768px)/* and (max-width: 1199px)*/{
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }  
     /*header*/
   .header-navigation {
@@ -908,6 +908,14 @@ body {
     height: 88px;
 }
 /****Footer*****/
+.containerf { 
+    max-width: 584px;   
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: flex-start;   
+            
+}
 .footerlist {
     text-align: left;
     display: flex;
@@ -1028,7 +1036,7 @@ body {
     left: 156px;
     top: 1016px;*/
     display: block;
-    padding-top: 120px;
+    /*padding-top: 120px;*/
     padding-bottom: 120px;
 }
 .wawd2 {
